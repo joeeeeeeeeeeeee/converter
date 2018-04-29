@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Converter</title>
+  <link rel="stylesheet" href="assets/stylesheets/reset.css">
+  <link rel="stylesheet" href="assets/stylesheets/main.css">
+  <script src="assets/scripts/jquery-3.3.1.min.js"></script>
+  <script src="assets/scripts/main.js"></script>
+</head>
+<body>
+  <h1>Unit Converter</h1>
+  <h2> Weight </h2>
+  <form>
+  <h3>Imperial</h3>
+    <fieldset id="imperial_weight">
+      <div class="input_option_1">
+        <span><input id="only_pounds" type="number"><label for="only_pounds">lb</label></span>
+      </div>
+      <div class="input_option_2 hidden">
+        <span><input id="stones"      type="number"><label for="stones">st</label></span>
+        <span><input id="pounds"      type="number"><label for="pounds">lb</label></span>
+      </div>
+
+      
+      <div>
+        <div class="option_1">
+          <input id="only_pounds_radio" checked type="radio" name="imperial_weight" value="only_pounds">
+          <label for="only_pounds_radio">pounds</label>
+        </div>
+        <div class="option_2">
+          <input id="stones_and_pounds_radio" type="radio" name="imperial_weight" value="stones and pounds">
+          <label for="stones_and_pounds_radio">stones and pounds</label>
+        </div>
+      </div>
+    </fieldset>
+    <h3>Metric</h3>
+    <fieldset id="metric_weight">
+
+      <div class="input_option_1">
+        <span><input id="kilograms" type="number"><label for="kilograms">kg</label></span>  
+      </div>
+    </fieldset>
+  </form>
+
+  <h2>Height</h2>
+  <form>
+    <h3>Imperial</h3>
+    <fieldset id="imperial_height">
+      <div class="input_option_1">
+        <span><input id="feet"      type="number"><label for="feet">ft</label></span>
+        <span><input id="inches"      type="number"><label for="inches">in</label></span>
+      </div>
+      <div class="input_option_2 hidden">
+        <span><input id="only_inches" type="number"><label for="only_inches">in</label></span>
+      </div>
+   
+      <div>
+        <div class="option_1">
+          <input id="feet_and_inches_radio" checked type="radio" name="imperial_height" value="feet and inches">
+          <label for="feet_and_inches_radio">feet and inches</label>
+        </div>
+        <div class="option_2">
+          <input id="only_inches_radio" type="radio" name="imperial_height" value="only_inches">
+          <label for="only_inches_radio">inches</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <h3>Metric</h3>
+    <fieldset id="metric_height">
+      <div class="input_option_1">
+        <span><input id="cm" type="number"><label for="cm">cm</label></span> 
+      </div>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

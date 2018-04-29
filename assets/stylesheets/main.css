@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  font-family: "Arial";
+  color: #555;
+  line-height: 20px;
+  font-size: 18px;
+
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+fieldset > div{
+  display: flex;
+  justify-content: space-around;
+}
+
+h1,h2,h3{
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+h1{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  padding-bottom: 10px;
+}
+h2{
+  display: inline;
+  position: relative;
+  top: 10px;
+  padding: 4px 12px;
+  background-color: #fff;
+  border: 1px solid #ffb57f;
+  border-radius: 30px;
+}
+
+form{
+  border: 1px solid #ffb57f;
+  padding: 20px 20px 30px 20px;
+  margin-bottom: 40px;
+}
+form:last-child{
+  margin-bottom: 0;
+}
+h3{
+  display: inline;
+  position: relative;
+  top: 10px;
+  padding: 4px 12px;
+  background-color: #fff;
+  border: 1px solid #65cbc0;
+  border-radius: 30px;
+}
+
+form > fieldset{
+  padding: 25px 0 10px;
+  border: 1px solid #65cbc0;
+}
+
+input[type=number] + label{
+  padding-left: 8px;
+  padding-top: 3px;
+  position: absolute;
+}
+
+input[type=radio]{
+  margin-top: 15px;
+}
+
+/*================
+  widget stylings
+==================*/
+
+input[type=radio]{
+  opacity: 0;
+}
+input[type=radio] + label{
+  position: relative;
+  padding-left: 25px;
+}
+input[type=radio] + label::before{
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #65cbc0;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+}
+
+input[type=radio] + label::after{
+  content: none;
+  display: inline-block;
+  height: 6px;
+  width: 14px;
+  border-left: 5px solid #888;
+  border-bottom: 3px solid #888;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 4px;
+  top: 7px;
+}
+input[type=radio]:checked + label::after{
+  content: "";
+}
+
+input[type=number]{
+  border: 1px solid #65cbc0;
+  height: 25px;
+  font-size: 16px;
+  width: 55px;
+  text-align: center;
+}
+input[type=number]:focus{
+  border: 1px solid #ffb57f;
+  outline-color: #ffb57f;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*===================
+     other
+ ===================*/
+
+.hidden{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
